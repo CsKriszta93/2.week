@@ -10,7 +10,15 @@ namespace HelloMe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Kriszta!");
+            string row1 = ("Humpty Dumpty sat on a wall,");
+            string row2 = ("Humpty Dumpty had a great fall.");
+            string row3 = ("All the king's horses and all the king's men");
+            string row4 = ("Couldn't put Humpty together again.");
+
+            Console.WriteLine(row1 + row2 + row3 + row4);
+
+            Console.ReadLine();
+
         }
     }
 }
