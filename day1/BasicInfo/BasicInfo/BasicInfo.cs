@@ -4,22 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntroduceYourself
+namespace BasicInfo
 {
-    class IntroduceYourself
+    class BasicInfo
     {
         static void Main(string[] args)
         {
             string name = "Csere Kriszta";
-            int age = 24;
-            double height = 1.64;
+            int myAge = 24;
+            double height= 1.64;
+            bool married = false;
 
             Console.WriteLine(name);
-            Console.WriteLine(age);
+            Console.WriteLine(myAge);
             Console.WriteLine(height);
+            Console.WriteLine(married);
 
             Console.ReadLine();
-
         }
     }
 }
