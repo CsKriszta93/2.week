@@ -10,6 +10,10 @@ namespace SumElements
     {
         static void Main(string[] args)
         {
+            int[] r = { 54, 23, 66, 12 };
+
+            Console.WriteLine(r[2] + r[3]);
+            Console.ReadLine();
         }
     }
 }
