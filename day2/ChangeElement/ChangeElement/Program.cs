@@ -10,18 +10,17 @@ namespace ChangeElement
     {
         static void Main(string[] args)
         {
-            int[] s = new int[6];
-            s[0] = 1;
-            s[1] = 2;
-            s[2] = 3;
-            s[3] = 8;
-            s[4] = 5;
-            s[5] = 6;
-
+            int[] s = { 1, 2, 3, 8, 5, 6 };
+          
             int fourth = 4;
             s[3] = fourth;
 
-            Console.WriteLine(s[3]);
+            foreach (int i in s)
+            {
+                Console.WriteLine(i);
+
+            }
+
             Console.ReadLine();
 
             
