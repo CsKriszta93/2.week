@@ -8,28 +8,34 @@ namespace Project
 {
     class Anagram
     {
-        public static bool Anagram(string a, string b)
+        public static bool Anagram1(string input1, string input2)
         {
-         Console.WriteLine("Type in a word");
-         string Input1 = Console.ReadLine();
-         Console.WriteLine("Type in another word");
-         string Input2 = Console.ReadLine();
-         char[] chars1 = Input1.ToCharArray();
-         char[] chars2 = Input2.ToCharArray();
-         Array.Sort(chars1, chars2);
+             char[] chars1 = input1.ToCharArray();
+             char[] chars2 = input2.ToCharArray();
+             Array.Sort(chars1);
+             Array.Sort(chars2);
+            if (chars1.Length != chars2.Length)
+             {
+                return false;
+             }
             for (int i = 0; i < chars1.Length; i++)
             {
                 if (chars1[i] != chars2[i])
                     return false;
-                if (chars1 == chars2 && chars1[i] != chars2[i])
-                    return true;
             }
-           
+            return true;
         }
 
         static void Main(string[] args)
         {
-            Console.WriteLine());
+            Console.WriteLine("Type in a word");
+            string input1 = Console.ReadLine();
+            Console.WriteLine("Type in another word");
+            string input2 = Console.ReadLine();
+
+            bool isAnagram1 =  Anagram1(input1, input2);
+            Console.WriteLine(isAnagram1);
+
             Console.ReadLine();
         }
     }
