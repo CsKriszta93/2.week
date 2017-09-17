@@ -29,14 +29,14 @@ namespace GuessNumber
                     Console.WriteLine("It's too low.");
                     lives--;
                     Console.WriteLine("You have " + lives + " left. Keep trying!");
-                    Console.ReadLine();
+                    Console.WriteLine();
                 }
                 else if (input > number)
                 {
                     Console.WriteLine("It's too high.");
                     lives--;
                     Console.WriteLine("You have " + lives + " left. Keep trying!");
-                    Console.ReadLine();
+                    Console.WriteLine();
                 }
                 if (lives == 0)
                 {
