@@ -6,19 +6,27 @@ using System.Threading.Tasks;
 
 namespace Matchmaking
 {
-    class Program
+    class Matchmaking
     {
         static void Main(string[] args)
         {
             var girls = new List<string> { "Eve", "Ashley", "Bözsi", "Kat", "Jane" };
             var boys = new List<string> { "Joe", "Fred", "Béla", "Todd", "Neef", "Jeff" };
-
             var order = new List<string> {};
-            foreach (string i in order)
+            
+            for (int i = 0; i < boys.Count; i++)
             {
-                Console.WriteLine(i);
-            }
+                if (i < girls.Count)
+                {
+                    order.Add(girls[i]);
+                    order.Add(boys[i]);
+                }
+     
+                foreach (var names in order)
+                    Console.WriteLine(names);
 
+            }
+           
             Console.ReadLine();
            
 
